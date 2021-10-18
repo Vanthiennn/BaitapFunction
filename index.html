@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="w-50">
+            <form>
+                <h2>Bài tập 1 </h2>
+                <div class="form-group">
+                  <label for="num">Điểm chuẩn</label>
+                  <input type="number" class="form-control" id="num" placeholder="Điểm chuẩn">
+                </div>
+                <div class="my-3 w-50">
+                    <select class="form-control" id="location">
+                        <option value="0">Chọn khu vực</option>
+                        <option value="A">A </option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                    </select>
+                </div>
+                <div class="my-3 w-50">
+                    <select class="form-control" id="object">
+                        <option value="0">Chọn đối tượng</option>
+                        <option value="1">1 </option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                  <label for="num1">Điểm môn thứ nhất </label>
+                  <input type="number" class="form-control" id="num1" placeholder="Điểm môn thứ nhất" >
+                </div>
+                <div class="form-group">
+                    <label for="num2">Điểm môn thứ hai </label>
+                    <input type="number" class="form-control" id="num2" placeholder="Điểm môn thứ hai" >
+                </div>
+                <div class="form-group">
+                    <label for="num3">Điểm môn thứ ba </label>
+                    <input type="number" class="form-control" id="num3" placeholder="Điểm môn thứ ba" >
+                </div>
+                <button type="button" class="btn btn-info mb-3" id="btnNum">Kết quả</button>
+                <p id="txtNum"></p>
+                <h2>Bài tập 2 </h2>
+                <div class="form-group">
+                  <label for="name">Họ và tên</label>
+                  <input type="text" class="form-control" id="name" placeholder="Nhập Họ và Tên">
+                </div>
+                <div class="form-group">
+                    <label for="kwUsed">Số kw </label>
+                    <input type="number" class="form-control" id="kwUsed" placeholder="Nhập số kw" >
+                </div>
+                <button type="button" class="btn btn-info mb-3" id="btnKw">Tính tiền điện</button>
+                <p id="txtKw"></p>
+                <h2>Bài tập 3 </h2>
+                <div class="form-group">
+                  <label for="fullName">Họ và tên</label>
+                  <input type="text" class="form-control" id="fullName" placeholder="Nhập Họ và Tên">
+                </div>
+                <div class="form-group">
+                    <label for="incomeYear">Tổng thu nhập năm </label>
+                    <input type="number" class="form-control" id="incomeYear" placeholder="Nhập tổng thu nhập năm" >
+                </div>
+                <div class="form-group">
+                    <label for="people">Số người phụ thuộc</label>
+                    <input type="number" class="form-control" id="people" placeholder="Số người phụ thuộc" >
+                </div>
+                <button type="button" class="btn btn-info mb-3" id="btnTax">Tính tiền thuế</button>
+                <p id="txtTax"></p>
+                <h2>Bài tập 4</h2>
+                <div class="my-3 w-50">
+                    <select class="form-control" id="selection" onchange="showConnection()">
+                        <option>Chọn loại Khách hàng</option>
+                        <option value="1">Nhà dân </option>
+                        <option value="2">Doanh nghiệp</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="connection"></label>
+                    <input type="number" class="form-control" id="connection" placeholder="Số kết nối" style="display: none;">
+                </div>
+                <div class="form-group">
+                    <label for="customer"></label>
+                    <input type="text" class="form-control" id="customer" placeholder="Nhập mã khách hàng">
+                </div>
+                <div class="form-group">
+                      <label for="channel"></label>
+                      <input type="number" class="form-control" id="channel" placeholder="Số kênh cao cấp" >
+                </div>
+                <button type="button" class="btn btn-info mb-3" id="btnCable">Tính tiền cáp</button>
+                <p id="txtCable"></p>
+            </form>    
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
